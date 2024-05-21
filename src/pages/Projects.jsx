@@ -88,7 +88,7 @@ export default function Projects() {
         </Row>
         <Divider></Divider>
 
-        <Typography.Paragraph>I have even more projects, please can refer my <a href="https://github.com/spicybirsge" target="_blank">github</a> for them.</Typography.Paragraph>
+        <Typography.Paragraph>I have even more projects, please can refer my <a href="https://github.com/spicybirsge" target="_blank">github</a> for them. If you would like to support my work consider buying me a <a href="https://buymeacoffee.com/shaheerahamed" target="_blank">coffee</a>  😅.</Typography.Paragraph>
     </>;
 
     return <SideBar element={element} />;
