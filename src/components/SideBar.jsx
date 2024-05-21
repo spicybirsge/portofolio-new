@@ -29,7 +29,7 @@ const Sidebar = (props) => {
 
   const handleClick = (e) => {
 
-    if (e.key === 'twitter' || e.key === "youtube" || e.key === "github" || e.key === "discord") {
+    if (e.key === 'twitter' || e.key === "youtube" || e.key === "github" || e.key === "discord" || e.key === "coffee") {
      return;
     } else {
       setSelectedKeys([e.key]);
