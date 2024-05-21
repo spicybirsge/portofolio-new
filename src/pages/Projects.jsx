@@ -34,15 +34,54 @@ export default function Projects() {
                 </Card></Badge.Ribbon>
             </Col>
             <Col xs={24} sm={12} md={8} lg={8} xl={6}>
-            <Badge.Ribbon text="Under developement" color="green"> <Card
+            <Badge.Ribbon text="Under developement" color="red"> <Card
                actions={[
                
                 <Typography.Text ><a href="https://github.com/GlymphApp" target="_blank" >Visit</a></Typography.Text>
                ]}
                     hoverable
-                    cover={<img alt="example" src={process.env.PUBLIC_URL+"/assets/glymph.png"} />}
+                    cover={<img alt="example" src={process.env.PUBLIC_URL+"/assets/glymph.png"} height={100} />}
                 >
                     <Meta title="Glymph" description="Glymph is an app which is underdevelopement. It is aimed to provide a new way to host communities." />
+                    
+                </Card></Badge.Ribbon>
+            </Col>
+            <Col xs={24} sm={12} md={8} lg={8} xl={6}>
+            <Badge.Ribbon text="available" color="green"> <Card
+               actions={[
+               
+                <Typography.Text ><a href="https://github.com/spicybirsge/notebin" target="_blank" >Visit</a></Typography.Text>
+               ]}
+                    hoverable
+                    cover={<img alt="example" src={process.env.PUBLIC_URL+"/assets/notebin.png"} height={75} />}
+                >
+                    <Meta title="NoteBin" description="Notebin is a simple webapp which allows you to create bins where you can create codes, notes and share them, it also supports syntax higlighting" />
+                    
+                </Card></Badge.Ribbon>
+            </Col>
+            <Col xs={24} sm={12} md={8} lg={8} xl={6}>
+            <Badge.Ribbon text="available" color="green"> <Card
+               actions={[
+               
+                <Typography.Text ><a href="https://github.com/spicybirsge/link-shortener" target="_blank" >Visit</a></Typography.Text>
+               ]}
+                    hoverable
+                    cover={<img alt="example" src={process.env.PUBLIC_URL+"/assets/linkshrt.png"} height={75} />}
+                >
+                    <Meta title="Linkshrt" description="Linkshrt is a simple link shortener which allows you to shorten links with your own slug. It features antiphishing technology such that you cannot use it to redirect to phishing sites." />
+                    
+                </Card></Badge.Ribbon>
+            </Col>
+            <Col xs={24} sm={12} md={8} lg={8} xl={6}>
+            <Badge.Ribbon text="available" color="green"> <Card
+               actions={[
+               
+                <Typography.Text ><a href="https://www.npmjs.com/package/secret-gen-cli" target="_blank" >Visit</a></Typography.Text>
+               ]}
+                    hoverable
+                    cover={<img alt="example" src={process.env.PUBLIC_URL+"/assets/cli.png"} height={75} />}
+                >
+                    <Meta title="Secret Gen CLI" description="A simple command line interface that generates a cryptographically secure string. This was made using node.js using the node.js crypto module to generate secure strings." />
                     
                 </Card></Badge.Ribbon>
             </Col>
