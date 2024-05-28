@@ -7,4 +7,22 @@
     padding: 8px;
     cursor: pointer;
   }
+
+
+.ant-menu-item a,
+.ant-menu-item {
+  white-space: normal; 
+  word-wrap: break-word;
+}
+
+.ant-layout-sider {
+  max-width: 100%; 
+  overflow: hidden; 
+}
+
+
+.ant-divider-horizontal {
+  max-width: 100%; 
+}
+
   
