@@ -5,6 +5,8 @@ import getTheme from "./functions/getTheme";
 import { ConfigProvider, theme } from "antd";
 import Projects from "./pages/Projects";
 import Activity from "./pages/Activity";
+import Sidebar from "./components/SideBar";
+import Settings from "./pages/Settings";
 function App() {
   
   const { defaultAlgorithm, darkAlgorithm } = theme;
@@ -24,6 +26,7 @@ function App() {
     <Route path="/" element={<Home/>}/>
     <Route path="/projects" element={<Projects/>}/>
     <Route path="/activity" element={<Activity/>}/>
+    <Route path="/settings" element={<Settings/>}></Route>
    </Routes>
    </BrowserRouter></ConfigProvider>
    </>

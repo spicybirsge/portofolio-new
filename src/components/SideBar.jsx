@@ -10,7 +10,8 @@ TwitterOutlined,
 YoutubeOutlined,
 GithubOutlined,
 DiscordOutlined,
-CoffeeOutlined
+CoffeeOutlined,
+SettingOutlined
 
 } from '@ant-design/icons';
 import { Link, useLocation } from 'react-router-dom';
@@ -109,6 +110,10 @@ const Sidebar = (props) => {
           </Menu.Item>
           <Menu.Item key="coffee" icon={<CoffeeOutlined />}>
 <a href='https://buymeacoffee.com/shaheerahamed' target='_blank' rel='noreferrer'>Support Me</a>
+          </Menu.Item>
+          <Divider orientation='left' plain>Customization</Divider>
+          <Menu.Item key={"/settings"} icon={<SettingOutlined/>}>
+            <Link to={"/settings"}>Settings</Link>
           </Menu.Item>
         </Menu>
         <div className="collapse-button" onClick={toggle} style={{
