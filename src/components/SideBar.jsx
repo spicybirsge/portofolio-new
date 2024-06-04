@@ -11,8 +11,8 @@ YoutubeOutlined,
 GithubOutlined,
 DiscordOutlined,
 CoffeeOutlined,
-SettingOutlined
-
+SettingOutlined,
+BookOutlined
 } from '@ant-design/icons';
 import { Link, useLocation } from 'react-router-dom';
 import '../css/SideBar.css'
@@ -30,7 +30,7 @@ const Sidebar = (props) => {
 
   const handleClick = (e) => {
 
-    if (e.key === 'twitter' || e.key === "youtube" || e.key === "github" || e.key === "discord" || e.key === "coffee") {
+    if (e.key === 'twitter' || e.key === "youtube" || e.key === "github" || e.key === "discord" || e.key === "coffee" || e.key === "blog") {
      return;
     } else {
       setSelectedKeys([e.key]);
@@ -94,6 +94,9 @@ const Sidebar = (props) => {
           </Menu.Item>
           <Menu.Item key="/activity" icon={<LineChartOutlined />}>
            <Link to="/activity">Activity</Link>
+          </Menu.Item>
+          <Menu.Item key={"blog"} icon={<BookOutlined />}>
+            <a href='https://blog-shaheerahamed.vercel.app/' target='_blank'>Blog</a>
           </Menu.Item>
           <Divider orientation='left' plain>Socials</Divider>
           <Menu.Item key="twitter" icon={<TwitterOutlined />}>

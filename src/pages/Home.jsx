@@ -1,7 +1,7 @@
 import { Divider, Typography, Button, Space } from "antd"
 import SideBar from "../components/SideBar";
 import { GithubOutlined,ProjectOutlined,
-    LineChartOutlined, } from "@ant-design/icons";
+    LineChartOutlined, BookOutlined } from "@ant-design/icons";
     import { Link } from "react-router-dom";
     import "../css/button.css"
 
@@ -39,6 +39,10 @@ export default function Home() {
   <Divider type="vertical"/>
   <a href="https://github.com/spicybirsge" target="_blank">
     <Button type="primary" icon={<GithubOutlined/>}>GitHub</Button>
+  </a>
+  <Divider type="vertical"/>
+  <a href="https://blog-shaheerahamed.vercel.app/" target="_blank">
+    <Button type="primary" icon={<BookOutlined />}>Blog</Button>
   </a>
 </div>
 
