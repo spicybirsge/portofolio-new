@@ -85,6 +85,19 @@ export default function Projects() {
                     
                 </Card></Badge.Ribbon>
             </Col>
+            <Col xs={24} sm={12} md={8} lg={8} xl={6}>
+            <Badge.Ribbon text="available" color="green"> <Card
+               actions={[
+               
+                <Typography.Text ><a href="https://blog-shaheerahamed.vercel.app/" target="_blank" >Visit</a></Typography.Text>
+               ]}
+                    hoverable
+                    cover={<img alt="example" src={process.env.PUBLIC_URL+"/assets/blog.png"} height={75} />}
+                >
+                    <Meta title="Blog" description="My personal website where I write blogs, it is dynamic and has authentication such that only an admin can login and manage posts and write them. Made with Next.js Expressjs and Mongodb" />
+                    
+                </Card></Badge.Ribbon>
+            </Col>
         </Row>
         <Divider></Divider>
 
