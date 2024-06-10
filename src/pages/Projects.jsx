@@ -98,6 +98,19 @@ export default function Projects() {
                     
                 </Card></Badge.Ribbon>
             </Col>
+            <Col xs={24} sm={12} md={8} lg={8} xl={6}>
+            <Badge.Ribbon text="available" color="green"> <Card
+               actions={[
+               
+                <Typography.Text ><a href="https://markdownshare.vercel.app/" target="_blank" >Visit</a></Typography.Text>
+               ]}
+                    hoverable
+                    cover={<img alt="example" src={process.env.PUBLIC_URL+"/assets/markdownshare.png"} height={75} />}
+                >
+                    <Meta title="Markdown Share" description="Alternative to codebins! Why share only code, when you can share markdown files with explanations along with code. Made with nextjs, express, mongoDB and nodejs" />
+                    
+                </Card></Badge.Ribbon>
+            </Col>
         </Row>
         <Divider></Divider>
 
