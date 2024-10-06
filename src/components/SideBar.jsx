@@ -12,7 +12,8 @@ GithubOutlined,
 DiscordOutlined,
 CoffeeOutlined,
 SettingOutlined,
-BookOutlined
+BookOutlined,
+InstagramOutlined
 } from '@ant-design/icons';
 import { Link, useLocation } from 'react-router-dom';
 import '../css/SideBar.css'
@@ -30,7 +31,7 @@ const Sidebar = (props) => {
 
   const handleClick = (e) => {
 
-    if (e.key === 'twitter' || e.key === "youtube" || e.key === "github" || e.key === "discord" || e.key === "coffee" || e.key === "blog") {
+    if (e.key === 'twitter' || e.key === "youtube" || e.key === "github" || e.key === "discord" || e.key === "coffee" || e.key === "blog" || e.key === "instagram") {
      return;
     } else {
       setSelectedKeys([e.key]);
@@ -102,6 +103,9 @@ const Sidebar = (props) => {
           <Menu.Item key="twitter" icon={<TwitterOutlined />}>
 <a href='https://twitter.com/ashaheerdev' target='_blank' rel='noreferrer'>Twitter</a>
           </Menu.Item>
+          <Menu.Item key="instagram" icon={<InstagramOutlined/>}>
+<a href='https://instagram.com/ahamedboi' target='_blank' rel='noreferrer'>Instagram</a>
+          </Menu.Item>
           <Menu.Item key="youtube" icon={<YoutubeOutlined />}>
 <a href='https://www.youtube.com/@shaheerDev' target='_blank' rel='noreferrer'>YouTube</a>
           </Menu.Item>
@@ -114,7 +118,7 @@ const Sidebar = (props) => {
           <Menu.Item key="coffee" icon={<CoffeeOutlined />}>
 <a href='https://buymeacoffee.com/shaheerahamed' target='_blank' rel='noreferrer'>Support Me</a>
           </Menu.Item>
-          <Divider orientation='left' plain>Customization</Divider>
+          <Divider orientation='left' plain>Options</Divider>
           <Menu.Item key={"/settings"} icon={<SettingOutlined/>}>
             <Link to={"/settings"}>Settings</Link>
           </Menu.Item>
@@ -123,7 +127,7 @@ const Sidebar = (props) => {
              background: isDark ? "#141414" : "#ffffff"  ,
              color: isDark ? "#ffffff" : "#001529"
         }}>
-          {collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
+         
         </div>
       </Sider>
      
