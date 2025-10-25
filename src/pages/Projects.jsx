@@ -11,7 +11,7 @@ export default function Projects() {
                <Badge.Ribbon text="discontinued" color="yellow"> <Card
                actions={[
                
-                <Typography.Text ><a href="https://notehubapp.tech" target="_blank">Visit</a></Typography.Text>
+                <Typography.Text ><a href="https://notehubapp.vercel.app/" target="_blank">Visit</a></Typography.Text>
                ]}
                     hoverable
                     cover={<img alt="example" src={process.env.PUBLIC_URL+"/assets/notehub.png"} />}
